@@ -215,14 +215,27 @@ describe('The webpage', () => {
       const courses = Array.from(badges.querySelectorAll('.course'));
       courses.forEach((course, i) => {
         const anchor = course.querySelector('a');
+        const classes = Array.from(anchor.classList);
+        const textRegex = new RegExp('See Course', 'i');
         assert(!!anchor, 'Our `.course` elements need to contain an `a` element.');
         assert(typeof anchor.href === 'string', 'Our course `a` elements need an `href` attribute.');
         assert(
           mockData.courses.completed[i].url === anchor.href.toLowerCase().trim(),
           'Our course `a` elements need to point to the "Course URL" that is returned from our API.'
         );
+        assert(
+          !!classes.find((className) => className === 'btn'),
+          'Our course `a` elements need to have `btn` as its CSS class.'
+        );
+        assert(
+          !!classes.find((className) => className === 'btn-primary'),
+          'Our course `a` elements need to have `btn-primary` as its CSS class.'
+        );
+        assert(
+          textRegex.test(anchor.textContent),
+          'Our anchor `a` tags need to contain `See Course` as its text content'
+        );
       });
     });
-
   });
 });

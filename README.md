@@ -62,4 +62,4 @@ To deploy your `/src` directory to GitHub Pages, be sure to commit all of your c
 git subtree push --prefix src origin gh-pages
 ```
 
-This will push the `src` folder up to GitHub on the `gh-pages` branch. After that, you should be able to open up `http://username.github.io/jQueryBadgesProject`, where `username` is your GitHub username.
+This will push the `src` folder up to GitHub on the `gh-pages` branch. After that, you should be able to open up `http://cristytarantino.github.io/jQueryBadgesProject`.
