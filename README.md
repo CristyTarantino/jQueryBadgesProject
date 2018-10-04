@@ -17,7 +17,7 @@ You will further your JavaScript and jQuery skills, as well as feel more comfort
 
 ## Live Demo
 
-[Check out this link](https://cristytarantino.github.io/jQueryBadgesProject/) to see a working version of this project. Feel free to customize your project even further by adding more custom CSS styles to it once you've completed the steps.
+[Check out this link](jquery-badges-project) to see a working version of this project. Feel free to customize your project even further by adding more custom CSS styles to it once you've completed the steps.
 
 You’ll build a personal web page that displays the courses you’ve completed on Code School by pulling data from the Code School website.
 
